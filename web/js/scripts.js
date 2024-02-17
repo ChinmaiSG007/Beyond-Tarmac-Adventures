@@ -1,4 +1,6 @@
-
+function scrolltoTop(){
+    window.scroll(0,0)
+}
 (function($) {
     "use strict"; 
 	

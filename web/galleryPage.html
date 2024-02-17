@@ -1,90 +1,1298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	<link href="css/galleryStyle.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
-</head>
-<body>
-    <article class='gallery'>
-        <a class='gallery-link' href='https://unsplash.it/1200/1400?image=1081'>
-          <figure class='gallery-image'>
-            <img height='1400' src='https://unsplash.it/1200/1400?image=1081' width='1200'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1000/1000?image=1014'>
-          <figure class='gallery-image'>
-            <img height='1000' src='https://unsplash.it/1000/1000?image=1014' width='1000'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1000/1200?image=267'>
-          <figure class='gallery-image'>
-            <img height='1200' src='https://unsplash.it/1000/1200?image=267' width='1000'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1400/1400?image=266'>
-          <figure class='gallery-image'>
-            <img height='1400' src='https://unsplash.it/1400/1400?image=266' width='1400'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1400/1400?image=634'>
-          <figure class='gallery-image'>
-            <img height='1400' src='https://unsplash.it/1400/1400?image=634' width='1400'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1400/1400?image=923'>
-          <figure class='gallery-image'>
-            <img height='1400' src='https://unsplash.it/1400/1400?image=923' width='1400'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1200/1600?image=682'>
-          <figure class='gallery-image'>
-            <img height='1600' src='https://unsplash.it/1200/1600?image=682' width='1200'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1200/1200?image=173'>
-          <figure class='gallery-image'>
-            <img height='1200' src='https://unsplash.it/1200/1200?image=173' width='1200'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='https://unsplash.it/1400/1400?image=943'>
-          <figure class='gallery-image'>
-            <img height='1400' src='https://unsplash.it/1400/1400?image=943' width='1400'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-      </article>
-      <footer id='footer' role='contentinfo'>
-        <div class='container'>
-          <a class='logo' href='https://codepen.io/collection/XRoxGR' rel='home'>Calibration theme</a>
-          <a class='copy' href='https://mobilemarkup.com' target='_blank'>&copy; mobileMarkup.com</a>
-        </div>
-      </footer>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/galleryStyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
 
-      <script src="./js/gallery.js"></script>
-</body>
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <body data-spy="scroll" data-target=".fixed-top"></body>
+    <div onclick="scrolltoTop()" class="back-to-top page-scroll" style="display: inline;">Back to Top</div>
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+      <!-- Text Logo - Use this if you don't have a graphic logo -->
+      <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+      <!-- Image Logo -->
+      <div class="navbar-brand logo-image" onclick="scrolltoTop()">
+        <img src="images/BTLOGO.png" alt="logo" width="100%" />
+      </div>
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+      </button>
+      <!-- end of mobile menu toggle button -->
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="./index.html"
+              >HOME</a
+            >
+          </li>
+          <!-- Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle page-scroll"
+              href="#!"
+              id="navbarDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >TOUR</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#!"
+                ><span class="item-text">NORTH INDIA</span></a
+              >
+              <div class="dropdown-items-divide-hr"></div>
+              <a class="dropdown-item" href="#!"
+                ><span class="item-text">SOUTH INDIA</span></a
+              >
+            </div>
+          </li>
+          <!-- end of dropdown menu -->
+          <!-- Dropdown Menu -->
+
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#!">TRAVEL TIPS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+        <span class="nav-item social-icons">
+          <span class="fa-stack">
+            <a
+              href="https://www.instagram.com/beyondtarmacadv/"
+              target="_blank"
+            >
+              <span class="hexagon"></span>
+              <i class="fab fa-instagram fa-stack-1x"></i>
+            </a>
+          </span>
+        </span>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navbar -->
+
+    <div class="gallery01">
+      <div class="gallery__column">
+        <a
+          href="./images/gallery/DSC_4980.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_4980.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5753.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5753.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5007.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5007.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5011.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5011.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5015.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5015.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5056.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5056.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5061.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5061.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5088.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5088.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5095.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5095.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5188.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5188.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5221.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5221.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5025.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5025.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5192.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5192.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5195.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5195.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5272.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5272.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5275.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5275.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5284.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5284.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5315.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5315.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+      </div>
+
+
+      <div class="gallery__column">
+        <a
+          href="./images/gallery/DSC_6412.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_6412.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_6452.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_6452.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_6472.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_6472.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/IMG-20210421-WA0000.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/IMG-20210421-WA0000.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_4246.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_4246.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_4468.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_4468.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        
+        <a
+          href="./images/gallery/SMR_4883.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_4883.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_4897.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_4897.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_4924.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_4924.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5012.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5012.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_5034.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5034.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5469.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5469.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5480.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5480.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5492.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5492.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        
+        <a
+          href="./images/gallery/DSC_5768.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5768.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5781.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5781.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        <a
+          href="./images/gallery/DSC_5826.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5826.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_4983.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_4983.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+      </div>
+
+
+      <div class="gallery__column">
+        <a
+        href="./images/gallery/DSC_5436.jpg"
+        target="_blank"
+        class="gallery__link"
+      >
+        <figure class="gallery__thumb">
+          <img
+            src="./images/gallery/compressedImages/DSC_5436.jpg"
+            alt="Image 1"
+            class="gallery__image"
+          />
+          <figcaption class="gallery__caption">Trip name</figcaption>
+        </figure>
+      </a>
+        <a
+          href="./images/gallery/SMR_6550.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6550.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_6639.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6639.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_6718.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6718.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_6726.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6726.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_6743.jpeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6743.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_6771.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6771.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_6773.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6773.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_6777.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_6777.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9259.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9259.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9387.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9387.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9388.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9388.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9402.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9402.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9439.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9439.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9574.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9574.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9577.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9577.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9579.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9579.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9594.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9594.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9597.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9597.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        
+        <a
+          href="./images/gallery/SMR_9638.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9638.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+      </div>
+
+
+      <div class="gallery__column">
+        <a
+          href="./images/gallery/SMR_5380.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_5380.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9635.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9635.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9635.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9635.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9636.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9636.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9658.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9658.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9661.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9661.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9669.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9669.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9676.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9676.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9680.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9680.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9682.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9682.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9683.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9683.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9690.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9690.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9692.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9692.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9701.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9701.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9707.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9707.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9708.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9708.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9712.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9712.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9715.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9715.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/DSC_5427.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/DSC_5427.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        <a
+          href="./images/gallery/SMR_9644.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_9644.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+        
+        <a
+          href="./images/gallery/SMR_4543.jpg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="./images/gallery/compressedImages/SMR_4543.jpg"
+              alt="Image 1"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">Trip name</figcaption>
+          </figure>
+        </a>
+
+      </div>
+
+    </div>
+
+
+      <!-- Footer -->
+      <div class="footer">
+        <div id="contact" class="form-2">
+          <div class="container">
+            <div class="text-container">
+              <!-- <div class="section-title">CONTACT</div> -->
+              <h2>Get In touch with us</h2>
+              <p>
+                You can stop by our office for a cup of coffee and for any
+                questions and inquiries Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sit, quisquam accusantium. Non repellat sapiente
+                unde sunt magni doloremque fugit asperiores fuga exercitationem
+                quibusdam amet harum doloribus cupiditate atque, nobis rerum.
+              </p>
+              <ul class="list-unstyled li-space-lg">
+                <li class="address">
+                  <i class="fas fa-map-marker-alt"></i>Expedition Motors 92/2,
+                  23rd cross, 16th main BTM 2nd stage Benagluru- 560076
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i
+                  ><a href="tel:+91-9663299663">+91 9663299663</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i
+                  ><a href="mailto:office@aria.com">info@beyondtarmacadv.com</a>
+                </li>
+              </ul>
+              <h3>Follow Beyond Tarmac Adventures On Social Media</h3>
+  
+              <span class="fa-stack">
+                <a href="#!">
+                  <span class="hexagon"></span>
+                  <i class="fab fa-whatsapp fa-stack-1x"></i>
+                </a>
+              </span>
+              <span class="fa-stack">
+                <a href="https://www.instagram.com/beyondtarmacadv/" target="_blank">
+                  <span class="hexagon"></span>
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </a>
+              </span>
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of container -->
+        </div>
+        <!-- end of form-2 -->
+        <!-- end of contact -->
+  
+        <!-- end of container -->
+      </div>
+      <!-- end of footer -->
+      <!-- end of footer -->
+  
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="p-small">Copyright © 2024 BEYOND TARMAC ADVENTURES</p>
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- enf of row -->
+        </div>
+        <!-- end of container -->
+      </div>
+      <!-- end of copyright -->
+      <!-- end of copyright -->
+  
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
