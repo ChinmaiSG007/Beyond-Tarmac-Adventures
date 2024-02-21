@@ -1691,7 +1691,7 @@ input[type="checkbox"] {
  
   .form-2 ul li a:hover{
 	color: rgb(255, 235, 59);
-	font: 400 1.1rem/2rem sans-serif;text-decoration: none;
+	/* font: 400 1.1rem/2rem sans-serif;text-decoration: none; */
   }
  
 
