@@ -35,7 +35,7 @@ Colors:
 
 - Backgrounds - light gray #fbfbfb
 - Background - dark blue #153e52
-- Backgrounds navbar, footer - dark gray #113448
+- Backgrounds navbar, footer - dark gray #33443c
 - Buttons, bullets, icons - green #14bf98
 - Headings text - black #484a46
 - Body text - gray #787976
@@ -54,14 +54,17 @@ html {
 
 body,
 p {
-  color: #787976;
-  font: 400 1rem/1.5625rem "Open Sans", sans-serif;
+  color: #353534;
+  font: 400 1rem/1.5625rem "ttRoundsRegular", sans-serif;
 }
 
 .p-large {
   font: 800 1.75rem/1.625rem "Open Sans", sans-serif;
 }
 
+.header .p-large{
+  filter: drop-shadow(20px 1px 2px black);
+}
 .p-small {
   font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
@@ -88,7 +91,6 @@ h2 {
   color: #484a46;
   font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
 }
-
 
 h3 {
   color: #484a46;
@@ -142,16 +144,16 @@ strong {
 }
 
 .section-title {
-  color: #14bf98;
+  color: #89573b;
   font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
 }
 
 .btn-solid-reg {
   display: inline-block;
   padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
-  border: 0.125rem solid #14bf98;
+  border: 0.125rem solid #65402b;
   border-radius: 0.25rem;
-  background-color: #14bf98;
+  background-color: #65402b;
   color: #fff;
   font: 700 0.75rem/0 "Montserrat", sans-serif;
   text-decoration: none;
@@ -160,25 +162,25 @@ strong {
 
 .btn-solid-reg:hover {
   background-color: transparent;
-  color: #14bf98;
+  color: #65402b;
   text-decoration: none;
 }
 
 .btn-solid-lg {
   display: inline-block;
-  padding: 1.375rem 2.125rem 1.375rem 2.125rem;
-  border: 0.125rem solid #14bf98;
+  padding: 0.7rem 1.3rem;
+  border: 0.125rem solid #65402b;
   border-radius: 0.25rem;
-  background-color: #14bf98;
+  background-color: #65402b;
   color: #fff;
-  font: 700 0.75rem/0 "Montserrat", sans-serif;
+  font: 0.6rem "Montserrat", sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .btn-solid-lg:hover {
   background-color: transparent;
-  color: #14bf98;
+  color: #e4996e;
   text-decoration: none;
 }
 
@@ -603,7 +605,8 @@ input[type="checkbox"] {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #113448;
+  background: #33443c;
+  background-image: url(./../images/pattern30.png);
 }
 
 .spinner {
@@ -622,8 +625,8 @@ input[type="checkbox"] {
   height: 1rem;
   border-radius: 100%;
   background-color: #fff;
-  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -webkit-animation: sk-bouncedelay 1.8s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.8s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
@@ -663,12 +666,33 @@ input[type="checkbox"] {
 }
 
 /**************************/
+/*    Font Declaration     */
+/**************************/
+
+@font-face {
+  font-family: ttLakesBold;
+  src: url("./../Typography/Headline/BeyondTarmac\ Headline\ BOLD.ttf");
+}
+@font-face {
+  font-family: ttLakesRegular;
+  src: url("./../Typography/Headline/BeyondTarmac\ Headline.ttf");
+}
+@font-face {
+  font-family: ttRoundsBold;
+  src: url("./../Typography/Paragraphs/BEYONDTARMAC\ Paragraph\ Bold.ttf");
+}
+@font-face {
+  font-family: ttRoundsRegular;
+  src: url("./../Typography/Paragraphs/BEYONDTARMAC\ Paragraph\ REGULAR.ttf");
+}
+
+/**************************/
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
-  background-color: #113448;
+  background-color: #33443c;
   box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
   font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
   transition: all 0.2s;
@@ -681,12 +705,18 @@ input[type="checkbox"] {
 
 .navbar-custom .navbar-brand.logo-image img {
   /* width: 7.0625rem; */
-  height: 4rem;
+  height: 5rem;
   -webkit-backface-visibility: hidden;
 }
 
 .logo-image:hover {
   cursor: pointer;
+}
+
+@media all and (min-width: 800px) {
+  .logo-image img {
+    height: 7rem !important;
+  }
 }
 .navbar-custom .navbar-brand.logo-text {
   margin-top: 0.25rem;
@@ -739,7 +769,7 @@ input[type="checkbox"] {
   margin-top: 0;
   border: none;
   border-radius: 0.25rem;
-  background-color: #113448;
+  background-color: #33443c;
 }
 
 .navbar-custom .dropdown-item {
@@ -748,7 +778,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .dropdown-item:hover {
-  background-color: #113448;
+  background-color: #33443c;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -756,7 +786,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .dropdown-item:hover .item-text {
-  color: #14bf98;
+  color: #e4976b;
 }
 
 .navbar-custom .dropdown-items-divide-hr {
@@ -823,11 +853,30 @@ input[type="checkbox"] {
   margin-bottom: 3rem;
 }
 
-/* .anton-regular {
-	font-family: "Anton", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-  } */
+.text-container h1 {
+  font-family: "ttLakesBold", "Arial Bold", sans-serif !important;
+  line-height: 0.85 !important;
+  font-size: 10vw !important;
+}
+
+/* FONTS */
+
+.ttLakesBold {
+  font-family: ttLakesBold, "Arial Bold", sans-serif !important;
+}
+.ttLakesRegular {
+  font-family: ttLakesRegular !important;
+}
+.ttRoundsRegular {
+  font-family: ttRoundsRegular !important;
+}
+.ttRoundsBold {
+  font-family: ttRoundsBold, "Arial Bold", sans-serif !important;
+}
+
+.title-adv {
+  font-size: 6vw !important;
+}
 
 .header h1 {
   margin-bottom: 0.5rem;
@@ -835,13 +884,16 @@ input[type="checkbox"] {
 }
 
 .header .p-large {
-  margin-bottom: 2rem;
-  color: #dfe5ec;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  font-size: 2vw;
+  color: rgb(255, 243, 135);
 }
 
 .header .btn-solid-lg {
   margin-right: 0.5rem;
   margin-bottom: 1.25rem;
+  letter-spacing: 2px;
 }
 
 /*********************/
@@ -915,7 +967,7 @@ input[type="checkbox"] {
   position: absolute;
   width: 6rem;
   height: 6rem;
-  background: url("../images/hexagon-green.svg") center center no-repeat;
+  background: url("../images/hexagon-brown.png") center center no-repeat;
   background-size: 6rem 6rem;
 }
 
@@ -931,14 +983,19 @@ input[type="checkbox"] {
 .cards-1 .card-title {
   margin-bottom: 0.625rem;
 }
-
+.card-body h6{
+  font-family: ttLakesRegular;
+  font-size: 0.8rem !important;
+  text-align: center;
+}
 /************************/
 /*     07. Services     */
 /************************/
 .cards-2 {
-  padding-top: 6.625rem;
+  padding-top: 4.625rem;
   padding-bottom: 1.25rem;
   background-color: #fbfbfb;
+  background-image: url(./../images/pattern2.png);
 }
 
 .cards-2 .section-title {
@@ -947,10 +1004,12 @@ input[type="checkbox"] {
 }
 
 .cards-2 h2 {
-  margin-bottom: 3.25rem;
   text-align: center;
 }
 
+.cards-2 p{
+  text-align: center;
+}
 .cards-2 .card {
   margin-bottom: 5.625rem;
   border: none;
@@ -980,7 +1039,7 @@ input[type="checkbox"] {
 }
 
 .cards-2 .list-unstyled .fas {
-  color: #14bf98;
+  color: #65402b;
   font-size: 0.5rem;
   line-height: 1.375rem;
 }
@@ -996,8 +1055,13 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-.cards-2 .price span {
-  color: #14bf98;
+.card-body .ttLakesRegular{
+  letter-spacing: -0.4px !important;
+  font-size: 1vw;
+  text-align: center;
+}
+.price span {
+  color: #89573b;
 }
 
 .cards-2 .button-container {
@@ -1453,8 +1517,21 @@ input[type="checkbox"] {
   border-radius: 0.25rem;
   background: #fff;
   text-align: left;
+  background-image: url(./../images/pattern2.png);
 }
 
+.bgCol{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bgCol h3{
+  margin-top: 1rem;
+}
+
+.bgCol h6{
+  font-family: ttLakesRegular;
+  font-size: 0.8rem !important;
+}
 .lightbox-basic img {
   margin-right: auto;
   margin-bottom: 2rem;
@@ -1631,7 +1708,7 @@ input[type="checkbox"] {
 }
 
 .counter .list-unstyled .fas {
-  color: #14bf98;
+  color: #89573b;
   font-size: 0.5rem;
   line-height: 1.375rem;
 }
@@ -1653,7 +1730,7 @@ input[type="checkbox"] {
 .counter #counter .counter-value {
   display: inline-block;
   margin-bottom: 0.125rem;
-  color: #14bf98;
+  color: #89573b;
   font: 700 2.875rem/3.25rem "Montserrat", sans-serif;
   vertical-align: middle;
 }
@@ -1670,36 +1747,38 @@ input[type="checkbox"] {
 /*     16. Contact     */
 /***********************/
 .form-2 h2 {
-	color: #ffffff;
-	font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
-  }
+  color: #ffffff;
+  font: 700 1.75rem/2.125rem "ttLakesBold", sans-serif;
+}
 .form-2 h3 {
-	color: #ffffff;
-	font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
-  }
+  color: #ffffff;
+  font: 700 1.375rem/1.75rem "ttLakesBold", sans-serif;
+}
 
-  .form-2 p, .form-2 .address, .form-2 ul li a {
-	color: #ffffff;
-  }
+.form-2 p,
+.form-2 .address,
+.form-2 ul li a {
+  color: #ffffff;
+}
 
-  .form-2 ul li a{
-	font: 400 1rem/2rem sans-serif;text-decoration: none;
-  }
-  .form-2 ul li{
-	font: 600 1rem/2rem sans-serif;
-  }
- 
-  .form-2 ul li a:hover{
-	color: rgb(255, 235, 59);
-	/* font: 400 1.1rem/2rem sans-serif;text-decoration: none; */
-  }
- 
+.form-2 ul li a {
+  font: 400 1rem/2rem "ttRoundsRegular",sans-serif;
+  text-decoration: none;
+}
+.form-2 ul li {
+  font: 200 1rem/2rem "ttLakesBold",sans-serif;
+}
+
+.form-2 ul li a:hover {
+  color: #e4976b;
+  /* font: 400 1.1rem/2rem sans-serif;text-decoration: none; */
+}
 
 .form-2 .list-unstyled .fas,
 .form-2 .list-unstyled .fab {
   margin-right: 0.5rem;
   font-size: 0.875rem;
-  color: #14bf98;
+  color: #e4976b;
 }
 
 .form-2 .list-unstyled .fa-phone {
@@ -1718,7 +1797,7 @@ input[type="checkbox"] {
   position: absolute;
   width: 3.25rem;
   height: 3.25rem;
-  background: url("../images/hexagon-green.svg") center center no-repeat;
+  background: url("../images/hexagon-brown.png") center center no-repeat;
   background-size: 3.25rem 3.25rem;
   transition: all 0.2s ease;
 }
@@ -1736,7 +1815,7 @@ input[type="checkbox"] {
 }
 
 .form-2 .fa-stack:hover .fa-stack-1x {
-  color: #14bf98;
+  color: #89573b;
 }
 
 /**********************/
@@ -1744,7 +1823,7 @@ input[type="checkbox"] {
 /**********************/
 .footer {
   padding-top: 4rem;
-  background-color: #113448;
+  background-color: #33443c;
 }
 
 .footer h4 {
@@ -1764,7 +1843,7 @@ input[type="checkbox"] {
 .copyright {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
-  background-color: #113448;
+  background-color: #33443c;
   text-align: center;
 }
 
@@ -1786,13 +1865,13 @@ a.back-to-top {
   width: 2.625rem;
   height: 2.625rem;
   border-radius: 1.875rem;
-  background: #14bf98 url("../images/up-arrow.png") no-repeat center 47%;
+  background: #89573b url("../images/up-arrow.png") no-repeat center 47%;
   background-size: 1.125rem 1.125rem;
   text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-  background-color: #13aa87;
+  background-color: #b87b58;
 }
 
 /***************************/
@@ -1842,7 +1921,7 @@ a:hover.back-to-top {
 }
 
 .ex-basic-2 .list-unstyled .fas {
-  color: #14bf98;
+  color: #e4976b;
   font-size: 0.5rem;
   line-height: 1.375rem;
 }
@@ -1867,13 +1946,14 @@ a:hover.back-to-top {
   /* General Styles */
   .p-heading {
     width: 85%;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 2rem;
+    margin-left: 12rem;
   }
   /* end of general styles */
 
   /* Navigation */
-  .navbar-custom {
+
+  .navbar-trans {
     padding: 2.125rem 1.5rem 2.125rem 2rem;
     box-shadow: none;
     background: transparent;
@@ -1894,13 +1974,13 @@ a:hover.back-to-top {
 
   .navbar-custom .nav-item .nav-link:hover,
   .navbar-custom .nav-item .nav-link.active {
-    color: #ffc400;
+    color: #e4976b;
   }
 
   .navbar-custom.top-nav-collapse {
     padding: 0.375rem 1.5rem 0.375rem 2rem;
     box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-    background-color: #113448;
+    background-color: #33443c;
   }
 
   .navbar-custom.top-nav-collapse .navbar-brand.logo-text {
@@ -1913,7 +1993,7 @@ a:hover.back-to-top {
 
   .navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
   .navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-    color: #ffd900;
+    color: #e4976b;
   }
 
   .navbar-custom .dropdown-menu {
@@ -2057,7 +2137,7 @@ a:hover.back-to-top {
     width: 1.625rem;
     height: 1.625rem;
     position: absolute;
-    background: url("../images/hexagon-green.svg") center center no-repeat;
+    background: url("../images/hexagon-brown.png") center center no-repeat;
     background-size: 1.625rem 1.625rem;
     transition: all 0.2s ease;
   }
@@ -2075,7 +2155,7 @@ a:hover.back-to-top {
   }
 
   .navbar-custom .fa-stack:hover .fa-stack-1x {
-    color: #14bf98;
+    color: #89573b;
   }
   /* end of navigation */
 
@@ -2093,6 +2173,8 @@ a:hover.back-to-top {
   /* Intro */
   .basic-1 {
     padding-top: 6.875rem;
+    background-color: #f5f4ef;
+    background-image: url(./../images/pattern2.png);
   }
 
   .basic-1 .text-container {
@@ -2421,155 +2503,7 @@ a:hover.back-to-top {
 }
 /* end of min-width width 1200px */
 
-/* Mini gallery design */
 
-body {
-  background: #eee;
-}
-.gallery {
-  --size: min(60vmin, 400px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* box-shadow: 
-	  0 0 10px #0002,
-	  0 20px 40px -20px #0004; */
-  width: var(--size);
-  height: var(--size);
-  background: #fff;
-  border: 6px solid #fff;
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 1fr 1fr;
-  overflow: hidden;
-  gap: 6px;
-}
-
-.gallery-container {
-  position: relative;
-  margin-top: 30vh;
-  margin-bottom: 15vh;
-}
-
-.gallery img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@keyframes moveHorizontal {
-  to {
-    object-position: 100% 0;
-  }
-}
-
-@keyframes moveVertical {
-  to {
-    object-position: 0 100%;
-  }
-}
-
-@keyframes shrinkVertical {
-  to {
-    height: 0;
-  }
-}
-
-@keyframes shrinkHorizontal {
-  to {
-    width: 0;
-  }
-}
-
-@keyframes growHorizontal {
-  to {
-    width: 100%;
-  }
-}
-@keyframes growHorizontal2 {
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes growVertical {
-  to {
-    height: 100%;
-  }
-}
-
-@keyframes growAll {
-  to {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.gallery img:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: end;
-  animation: moveHorizontal 8.5s 0.5s 1, shrinkHorizontal 2s 9s ease-in 1;
-  animation-fill-mode: forwards;
-}
-
-.gallery img:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: end;
-  animation: shrinkHorizontal 2s 11s 1;
-  animation-fill-mode: forwards;
-}
-
-.gallery img:nth-child(3) {
-  grid-row: 2;
-  grid-column: 1 / 3;
-  align-self: end;
-  object-position: 0 0;
-  animation: moveVertical 5s 1s 1, shrinkVertical 3s 5s 1;
-  animation-fill-mode: forwards;
-}
-
-.gallery img:nth-child(4) {
-  grid-column: 1 / 3;
-  grid-row: 1;
-  width: 0;
-  justify-self: center;
-  align-self: start;
-  animation: growHorizontal 2.25s 11s 1, moveHorizontal 4s 14s 1,
-    shrinkVertical 2s 18s 1;
-  animation-fill-mode: forwards;
-}
-
-.gallery img:nth-child(5) {
-  grid-column: 1;
-  grid-row: 2;
-  width: 0;
-  justify-self: start;
-  align-self: end;
-  animation: growHorizontal 2.5s 7.5s 1, moveVertical 4s 12.5s 1,
-    shrinkHorizontal 2s 17s 1;
-  animation-fill-mode: forwards;
-}
-
-.gallery img:nth-child(6) {
-  grid-column: 2;
-  grid-row: 2;
-  width: 0;
-  justify-self: end;
-  align-self: end;
-  animation: growHorizontal 2s 8s 1, shrinkHorizontal 2s 17s 1;
-  animation-fill-mode: forwards;
-}
-
-.gallery img:nth-child(7) {
-  grid-column: 1/3;
-  grid-row: 1/3;
-  width: 0;
-  justify-self: end;
-  align-self: end;
-  object-position: 0 0;
-  animation: growHorizontal 2s 20s 1, moveHorizontal 16s 21.5s 1;
-  animation-fill-mode: forwards;
+.footer .form-2 .container .text-container h2{
+  font-style: ttLakesBold !important;
 }

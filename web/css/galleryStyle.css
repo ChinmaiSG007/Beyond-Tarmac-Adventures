@@ -256,7 +256,7 @@ html {
   /* end of general styles */
 
   /* Navigation */
-  .navbar-custom {
+  .navbar-custom2 {
     padding-right: 5rem;
     padding-left: 5rem;
   }
@@ -283,9 +283,14 @@ html {
 }
 /* Gallery */
 
+@media (min-width: 800px){
+  .gallery01 {
+    margin-top: 7rem !important;
+  }
+}
 .gallery01 {
   display: flex;
-  margin-top: 5.6rem;
+  margin-top: 5rem;
   padding: 2px;
   transition: 0.3s;
 }
